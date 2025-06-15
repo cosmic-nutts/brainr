@@ -37,14 +37,14 @@ const SubjectFilter = () => {
     }, [subject]);
 
     return (
-        <Select onValueChange={setSubject} value={subject}>
+        <Select onValueChange={setSubject} value={subject} >
             <SelectTrigger className="input capitalize">
                 <SelectValue placeholder="Subject" />
             </SelectTrigger>
             <SelectContent>
                 <SelectItem value="all">All subjects</SelectItem>
                 {subjects.map((subject) => (
-                    <SelectItem key={subject} value={subject} className="capitalize">
+                    <SelectItem key={subject} value={subject} className="capitalize ">
                         {subject}
                     </SelectItem>
                 ))}

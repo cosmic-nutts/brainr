@@ -7,8 +7,8 @@
 :root {
   --primary: oklch(0.205 0 0);
 
-  --cta: #2c2c2c;
-  --cta-gold: #fccc41;
+  --cta: #ff4a68;
+  --cta-gold: #b6ffe9df;
   --radius: 0.625rem;
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
@@ -38,7 +38,7 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
-  --background: oklch(1 0 0);
+  --background: oklch(96.499% 0.08284 101.166);
   --foreground: oklch(0.145 0 0);
 }
 
@@ -169,9 +169,11 @@ body {
   .btn-primary {
     @apply bg-primary text-white rounded-xl cursor-pointer px-4 py-2 flex items-center gap-2;
   }
-  .navbar {
-    @apply flex items-center justify-between mx-auto w-full px-14 py-4 bg-white max-sm:px-4;
-  }
+ .navbar {
+  @apply flex items-center justify-between mx-auto w-full px-14 py-4 max-sm:px-4;
+  background-color: #ffea82;
+}
+
   .btn-signin {
     @apply border border-black rounded-4xl px-4 py-2.5 text-sm font-semibold flex items-center gap-2 cursor-pointer;
   }
